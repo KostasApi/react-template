@@ -25,6 +25,7 @@
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
     "test:nowatch": "react-scripts test --watchAll=false",
+    "test:coverage": "react-scripts test --coverage",
     "prepare": "husky install",
     "release": "standard-version",
     "commit": "git-cz"
