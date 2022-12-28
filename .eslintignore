@@ -4,6 +4,7 @@
 /public
 
 /src/react-app-env.d.ts
+commitlint.config.js
 
 /package.json
 /package-lock.json
