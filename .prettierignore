@@ -2,5 +2,10 @@
 
 /build
 /coverage
+/node_modules
+/public
 
 /src/react-app-env.d.ts
+
+# Ignore all HTML files:
+*.html
