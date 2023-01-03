@@ -5,6 +5,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+if (
+  process.env.NODE_ENV === 'development' &&
+  process.env.REACT_APP_USE_MOCK === 'true'
+) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { worker } = require('./mocks/browser');
+  worker.start();
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
